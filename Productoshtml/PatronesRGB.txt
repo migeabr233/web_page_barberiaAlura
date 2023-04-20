@@ -1,0 +1,12 @@
+A,B,C,D,E,F
+0,1,2,3,4,5,6,7,8,9
+
+
+6 para color RGB en html
+2 red.
+2 green
+2 black
+rr gg bb
+0 = menor
+255 = max
+rgb(0,0,0)
