@@ -1,25 +1,85 @@
+/* CSS para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        position: relative;
+        top: 0;
+        right: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    nav ul {
+        margin-top: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .productos {
+        width: 90%; /* Modificado para que ocupe el 90% del ancho en dispositivos móviles */
+        margin: 0 auto;
+        padding: 20px; /* Modificado para reducir el relleno */
+    }
+
+    .productos li {
+        width: 100%; /* Modificado para que ocupe el 100% del ancho en dispositivos móviles */
+        margin-bottom: 20px;
+        box-sizing: border-box; /* Modificado para incluir el padding y el borde en el ancho */
+    }
+
+    .productos h2, .productos h3, .productos h4 {
+        font-size: 24px; /* Reducir el tamaño de fuente en dispositivos móviles */
+    }
+
+    .producto_des {
+        font-size: 16px; /* Reducir el tamaño de fuente para mejorar la legibilidad */
+    }
+
+    .producto_precio {
+        font-size: 18px; /* Reducir el tamaño de fuente para mejorar la legibilidad */
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+    }
+}
+
+/* Resto del CSS original */
 body {
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
 }
+
 header {
   background-color: #bbbbbb;
   padding: 20px; /*0;*/
 }
+
 /* .caja {
   width: 940px;
   position: relative;
   margin: 0 auto;
 } */
+
 nav {
   position: absolute;
   top: 110px;
   right: 0;
 }
+
 nav li {
   display: inline;
   /* margin:0 0 0 15px */
 }
+
 nav a {
   text-transform: uppercase;
   color: black;
@@ -28,6 +88,7 @@ nav a {
   text-decoration: none;
   margin: 0 0 0 15px;
 }
+
 .productos {
   width: 940px;
   margin: 0 auto;
@@ -35,6 +96,7 @@ nav a {
   /* border: solid; */
   /* background-color: #CCCCCC; */
 }
+
 .productos li {
   display: inline-block;
   text-align: center;
@@ -49,85 +111,105 @@ nav a {
   border-radius: 20px; /* para darle puntas redondeadas
     a los bordes */
 }
+
 .productos h2 {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
 }
+
 .productos h3 {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
 }
+
 .productos h4 {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
 }
+
 .producto_des {
   font-size: 18px;
 }
+
 .producto_precio {
   font-size: 20px;
   font-weight: bold;
   margin-top: 10px;
-} /* forma de capturar el mouse en css y cambiar de color
+}
+
+/* forma de capturar el mouse en css y cambiar de color
 el elemento. por ejemplo en nav la navegacion
 mientras el usuario tenga el mouse encima */
 nav a:hover {
   color: #c78c19;
 }
+
 .productos li:hover {
   border-color: #c78c19;
 }
+
 /* forma de detectar clik CSS */
 nav a:active {
   color: rgb(38, 0, 255);
 }
+
 .productos li:hover h2 {
   border-color: rgb(38, 0, 255);
   transform: scale(1.4);
 }
+
 .productos li:hover h3 {
   border-color: rgb(38, 0, 255);
   transform: scale(1.4);
 }
+
 .productos li:hover h4 {
   border-color: rgb(38, 0, 255);
   transform: scale(1.1);
 }
+
 /* .fondo_footer */
 footer {
   text-align: center;
   background: url(imagenes/bg.jpg);
 }
+
 #copi {
   color: white;
   font-style: italic;
   margin: 5px;
 }
+
 main {
   width: 940px;
   margin: 0 auto;
 }
+
 form {
   margin: 40px 0;
 }
+
 form label,
 form legend {
   display: block;
   font-size: 20px;
   margin: 0 0 10px;
 }
+
 .input_padron {
   display: block;
   margin: 0 0 20px;
   padding: 20px 25px;
   width: 50%;
 }
+
 .checkbox {
   margin: 20px 0;
 }
+
 .boton_enviar {
   width: 40%;
   padding: 15px 0;
@@ -139,10 +221,12 @@ form legend {
   transition: 0.5s;
   cursor: pointer;
 }
+
 .horario {
   font-size: 15px;
   font-weight: 1000;
 }
+
 .boton_enviar:hover {
   /* transition:2s all; */
   background-color: #5100ff;
@@ -150,18 +234,22 @@ form legend {
   transform: scale(1.2);
   /* transform:rotate(35deg); */
 }
+
 .tabla {
   margin: 40px 40px;
 }
+
 thead {
   background-color: #555555;
   color: white;
   font-weight: bold;
 }
+
 td,th {
   border: 1px solid black;
   padding: 8px 15px;
 }
+
 footer{
   margin: 0px,0px,0px,0px;
 }
